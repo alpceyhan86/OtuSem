@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="RastgeleWhileDeneme"/>
+        <attribute name="authors" value="alpce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-02 03:35:13 &#214;S"/>
+        <attribute name="created" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAzOjI2OjM5IMOWUzsyMDAy"/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAzOjM1OjEzIMOWUzsxOzIxMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="Random(11)"/>
+            <while expression="x!=10">
+                <output expression="x" newline="True"/>
+                <assign variable="x" expression="Random(11)"/>
+            </while>
+            <output expression="&quot;D&#246;ng&#252; bitti: Son de&#287;er&quot; &amp; x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SayiOyunu"/>
+        <attribute name="authors" value="alpce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-02 04:43:54 &#214;S"/>
+        <attribute name="created" value="YWxwY2U7QjsyMDI1LTEwLTAyOzA0OjMwOjM0IMOWUzsxOTkz"/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAyOzA0OjQzOjU0IMOWUzsxOzIxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tahmin, uretilenSayi, denemeSayisi" type="Integer" array="False" size=""/>
+            <assign variable="denemeSayisi" expression="0"/>
+            <assign variable="uretilenSayi" expression="Random(100)+1"/>
+            <do expression="uretilenSayi!=tahmin">
+                <assign variable="denemeSayisi" expression="denemeSayisi+1"/>
+                <output expression="&quot;Say&#305;y&#305; giriniz:&quot;" newline="True"/>
+                <input variable="tahmin"/>
+                <if expression="tahmin==uretilenSayi">
+                    <then>
+                        <output expression="&quot;Tebrikler! &#220;retilen Say&#305;: &quot;&amp; uretilenSayi &amp;&quot; &quot; &amp; denemeSayisi  &amp; &quot; seferde bildiniz.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="tahmin&gt;uretilenSayi">
+                            <then>
+                                <output expression="&quot;Azalt&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Artt&#305;r&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <output expression="&quot;Deneme Say&#305;s&#305; &quot; &amp; denemeSayisi" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

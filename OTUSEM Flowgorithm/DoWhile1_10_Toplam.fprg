@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="While1_10_Toplam"/>
+        <attribute name="authors" value="alpce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 11:18:33 &#214;&#214;"/>
+        <attribute name="created" value="YWxwY2U7QjsyMDI1LTEwLTAxOzExOjA5OjMyIMOWw5Y7MjEyNQ=="/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAxOzExOjE4OjMzIMOWw5Y7MjsyMjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="sayac" expression="1"/>
+            <do expression="sayac&lt;=10">
+                <assign variable="toplam" expression="toplam+sayac"/>
+                <assign variable="sayac" expression="sayac+1"/>
+            </do>
+            <output expression="&quot;Sonu&#231;:&quot; &amp; toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

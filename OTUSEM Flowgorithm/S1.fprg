@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="S1"/>
+        <attribute name="authors" value="alpce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-02 01:35:38 &#214;S"/>
+        <attribute name="created" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAxOjMxOjA3IMOWUzsxOTkx"/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAxOjM1OjM4IMOWUzsxOzIxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dogumYili" type="Integer" array="False" size=""/>
+            <output expression="&quot;Do&#287;um y&#305;l&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="dogumYili"/>
+            <output expression="&quot;Ya&#351;&#305;n&#305;z:&quot; &amp; 2025-dogumYili" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

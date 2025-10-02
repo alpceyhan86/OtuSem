@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="S1"/>
+        <attribute name="authors" value="alpce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-02 01:39:37 &#214;S"/>
+        <attribute name="created" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAxOjMxOjA3IMOWUzsxOTkx"/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAxOjM5OjM3IMOWUzsyOzIxMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, toplam" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="toplam" expression="0"/>
+            <while expression="sayac&lt;=10">
+                <if expression="sayac%2==0">
+                    <then>
+                        <assign variable="toplam" expression="toplam+sayac"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </while>
+            <output expression="&quot;&#199;ift say&#305;lar&#305;n toplam&#305;: &quot; &amp; toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

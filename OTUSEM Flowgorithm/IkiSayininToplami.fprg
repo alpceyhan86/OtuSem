@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="IkiSayininToplami"/>
+        <attribute name="authors" value="alpce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 10:36:26 &#214;&#214;"/>
+        <attribute name="created" value="YWxwY2U7QjsyMDI1LTEwLTAxOzEwOjExOjI4IMOWw5Y7MjEyMg=="/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAxOzEwOjM2OjI2IMOWw5Y7MTsyMjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;1. say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;2. say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <assign variable="sonuc" expression="sayi1+sayi2"/>
+            <output expression="&quot;Sonu&#231;:&quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

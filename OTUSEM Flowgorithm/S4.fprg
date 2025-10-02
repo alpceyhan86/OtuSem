@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="S1"/>
+        <attribute name="authors" value="alpce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-02 01:57:16 &#214;S"/>
+        <attribute name="created" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAxOjMxOjA3IMOWUzsxOTkx"/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAxOjU3OjE2IMOWUzs1OzIxMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, toplam, n" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;Biti&#351; de&#287;erini giriniz:&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&gt;0">
+                <then>
+                    <for variable="sayac" start="1" end="n" direction="inc" step="1">
+                        <if expression="sayac%3==0">
+                            <then>
+                                <assign variable="toplam" expression="toplam+sayac"/>
+                            </then>
+                            <else>
+                                <output expression="sayac &amp; &quot; dahil edilmiyor&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </for>
+                    <output expression="&quot;3 ile b&#246;l&#252;nnenlerin toplam&#305;: &quot; &amp; toplam" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;S&#305;f&#305;r ya da s&#305;f&#305;rdan k&#252;&#231;&#252;k girdiniz&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

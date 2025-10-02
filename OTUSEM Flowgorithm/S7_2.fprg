@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="S1"/>
+        <attribute name="authors" value="alpce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-02 03:26:17 &#214;S"/>
+        <attribute name="created" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAxOjMxOjA3IMOWUzsxOTkx"/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAyOjI2OjE0IMOWUzsxO2FscGNlO0I7MjAyNS0xMC0wMjswMTozMTowNyDDllM7UzQuZnByZzs0ODIz"/>
+        <attribute name="edited" value="YWxwY2U7QjsyMDI1LTEwLTAyOzAzOjI2OjE3IMOWUzs5OzIxMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i, pbToplam" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305;y&#305; giriniz:&quot;" newline="True"/>
+            <assign variable="pbToplam" expression="0"/>
+            <input variable="sayi"/>
+            <if expression="sayi&lt;2">
+                <then>
+                    <output expression="&quot;Asal say&#305;lar 2 den ba&#351;lar!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="i" start="1" end="sayi" direction="inc" step="1">
+                        <if expression="sayi%i==0">
+                            <then>
+                                <assign variable="pbToplam" expression="pbToplam+i"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <if expression="pbToplam==sayi+1">
+                        <then>
+                            <output expression="&quot;Asal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;De&#287;ildir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
